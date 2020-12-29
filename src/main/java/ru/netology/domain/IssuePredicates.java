@@ -16,7 +16,7 @@ public class IssuePredicates {
         return issue -> issue.getAssignees().containsAll(Arrays.asList(assignees));
     }
 
-    public static Predicate<Issue> isOpened(Boolean isOpened) {
+    public static Predicate<Issue> isOpened(boolean isOpened) {
         return issue -> issue.isOpened() == isOpened;
     }
 }
